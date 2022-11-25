@@ -1,0 +1,581 @@
+:root
+{
+    background-color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+#container
+{
+    display: flex;
+    flex-direction: column;
+    margin: 100px 0;
+    width: 75%;
+    height: 600px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 50px;
+    border-radius: 10px;
+}
+#icon
+{
+    height: 40px;
+    width: 40px;
+    padding: 15px 15px 15px 15px;
+    margin: 0px 25px 0px 25px;
+}
+#pic
+{
+    height: 40px;
+    width: 40px;
+    border-radius: 25px;
+    border: 2px solid rgb(255, 102, 0);
+}
+#container1 
+{
+    height: 75px;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px 10px 0px 0px;
+}
+#container1 p
+{
+    padding: 25px 15px 25px 15px;
+    transition: .25s;
+}
+#option
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#option ul
+{
+    display: flex;
+}
+#nav svg
+{
+    display: none;
+}
+#select
+{
+    list-style: none;
+}
+#select li{
+    display: flex;
+    justify-content: center;
+    padding: 0px 15px;
+    height: 100px;
+    cursor: pointer;
+}
+#select div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+#cartandpic
+{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+#details 
+{
+    display: inline-block;
+    height: 20px;
+    width: 22px;
+}
+#listitem div
+{
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    justify-content: space-between;
+    vertical-align: baseline;
+}
+#listitem
+{
+    position: relative;
+    top: 10px;
+    left: -100px;
+    display: none;
+    width: 200px;
+    height: 150px;
+    flex-direction: column;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    background-color: #ffffff;
+    border-radius: 10px;
+    z-index: 5;
+    animation: popup 0.5s;    
+}
+#details svg
+{
+    cursor: pointer;
+}
+#note
+{
+    position: relative;
+    top: -30px;
+    left: 10px;
+    display: none;
+    background-color: rgb(255, 102, 0);
+    color: #ffffff;
+    width: 20px;
+    height: 15px;
+    border-radius: 10px;
+    font-size: 10px;
+    align-items: center;
+    justify-content: center;
+}
+#display
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#finalanswer
+{
+    display: flex;
+    font-size: 10px;
+}
+#dis2
+{
+    width: 90%;
+    height: 10%;
+    color: white;
+    background-color: rgb(255, 102, 0);
+    border-radius: 5px;
+    cursor: pointer;
+}
+#dis2 p
+{
+    margin: 0;
+    font-size: 8px;
+    padding:0 35%;
+}
+#disimage img
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+#del
+{
+    cursor: pointer;
+}
+#container2
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5% 0%;
+}
+#products,#image1
+{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#image1
+{
+    align-items: center;
+    gap: 25px;
+}
+#popup
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    animation: popup 1s;
+}
+.main_img
+{
+    height: 275px;
+    width: 275px;
+    background-image: url("images/image-product-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.sub_img
+{
+    display: flex;
+    justify-content: space-around;
+    height: 75px;
+    width: 300px;
+    transition: 200ms;
+}
+.sub_img img
+{
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    transition: 0.1s;
+}
+#image1 .sub_img img
+{
+    cursor: pointer;
+}
+#popup svg
+{
+    position: relative;
+    top: -15px;
+    left: 450px;
+    cursor: pointer;
+}
+#image2
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+#image2 .main_img
+{
+    width: 425px;
+    height: 425px;
+}
+#image2 .sub_img
+{
+    gap: 50px;
+}
+#imagenav
+{
+    position: relative;
+    top: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#left, #right
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#left
+{
+    left: -25px;
+}
+#right
+{
+    left: 25px;
+}
+#price
+{
+    display: flex;
+    gap: 10px;
+}
+#purchace
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 25px;
+    height: 50px;
+    width: 100%;
+}
+#products p,#products h1,#products h2,#products h6,#products h5
+{
+    margin: 0;
+}
+#products
+{
+    gap: 15px;
+}
+#products p, #products h6
+{
+    color: rgb(255, 102, 0);
+}
+#products h5
+{
+    font-weight: 200;
+    color: #696969;;
+}
+#products h6
+{
+    padding: 8px;
+    border-radius: 5px;
+    background-color: rgba(255, 102, 0, 0.363);
+}
+#cart,#addcart
+{
+    border-radius: 5px;
+}
+#cart
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 12px;
+    height: 100%;
+    width: 22%;
+    background-color: rgba(202, 202, 202, 0.2);
+    transition: 0.5s;
+}
+.cart
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    height: 100%;
+    cursor: pointer;
+}
+#addcart
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    height: 100%;
+    width: 50%;
+    background-color: rgb(255, 102, 0);
+    cursor: pointer;
+    transition: 0.5s;
+}
+#addcart p
+{
+    color: white;
+}
+/*hover effect*/
+#select div:hover
+{
+    display: flex;
+    border-bottom: 2px solid rgb(255, 102, 0);
+    animation: expand 1s;
+}
+#close:hover
+{
+    fill: rgb(255, 102, 0);
+    transition: 0.5s;
+}
+#image1 .sub_img img:hover
+{
+    opacity: .7;
+    border: 2px solid rgb(255, 102, 0);
+    transition: 0.1s;
+}
+#left:hover,#right:hover
+{
+    background-color: rgb(255, 102, 0);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+    transition: 0.75s;
+}
+#addcart:hover
+{
+    opacity: 0.7;
+    transition: 0.75s;
+}
+#cart:hover
+{
+    background-color: #cccccc;
+    transition: 0.75s;
+}
+#addcart:hover
+{
+    opacity: 0.7;
+    transition: 0.75s;
+}
+/*animation effect*/
+@keyframes popup{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+@keyframes expand{
+    from{width: 0;}
+    to{width: 100%;}
+}
+@media only screen and (max-width:1028px)
+{
+    #body
+    {
+        align-items: center;
+    }
+    #pic
+    {
+        width: 25px;
+        height: 25px;
+    }
+    #container
+    {
+        margin: 5px 0;
+        width: 100%;
+        box-shadow: none;
+    }
+    #container1
+    {
+        justify-content: space-between;
+    }
+    #container1,#options,.main_img
+    {
+        border-radius: 0px;
+    }
+    #container2
+    {
+        flex-direction: column;
+        gap: 50px;
+    }
+    #option
+    {
+        flex-direction: row-reverse;
+    }
+    #nav svg
+    {
+        display: block;
+        padding: 0px 10px;
+    }
+    #select
+    {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        margin: 0;
+        top: 0;
+        background-color: #ffffff;
+        height: 100%;
+        width: 50%;
+        z-index: 4;
+        box-shadow: 10px 0px 50px rgba(0, 0, 0, 0.8);
+        animation: slider 1s;
+    }
+    #select svg
+    {
+        padding-top: 15px;
+    }
+    #select div
+    {
+       justify-content: left;
+       align-items: center;
+    }
+    #price_details
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    #price_details h5
+    {
+        margin-right: 5%;
+    }
+    #purchace
+    {
+        flex-direction: column;
+        height: 150px;
+    }
+    #image1,#products
+    {
+        width: 100%;
+    }
+    #products
+    {
+        padding-left: 10px;
+    }
+    #image1,.sub_img,#popup svg,#nav ul
+    {
+        display: none;
+    }
+    #popup svg
+    {
+        top: 0;
+        left: 0;
+    }
+    #imagenav
+    {
+        top: 0;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #left,#right
+    {
+        left: 0;
+    }
+    #listitem
+    {
+        left: -245px;
+        width: 322px;
+    }
+    #popup
+    {
+        display: flex;
+        position: relative;
+        margin: 0 25vw;
+        width: 50vw;
+        height: 50vw;
+    }
+    #popup .main_img
+    {
+        width: 50vw;
+        height: 50vw;
+        display: flex;
+        align-items: center;
+    }
+    #cart,#addcart
+    {
+        width: 90%;
+        height: 50px;
+        align-items: center;
+    }
+    #dis2 p
+    {
+        font-size: 14px;
+    }
+    /*animation effect*/
+    @keyframes slider {
+        from{
+            width: 0;
+            opacity: 0;
+        }
+        to{
+            width: 50%;
+            opacity: 1;
+        }
+    }
+}
+@media only screen and (max-width:480px)
+{
+    #listitem
+    {
+        position: absolute;
+        left: 2.5%;
+        top: 50px;
+        width: 95%;
+    }
+    #popup, #popup .main_img
+    {
+        margin: 0;
+        width: 100vw;
+        height: 100vw;
+    }
+}
